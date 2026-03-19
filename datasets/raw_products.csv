@@ -1,0 +1,61 @@
+product_id,brand,category,model_name,color,material,list_price,standard_cost,is_active
+PROD101,PeakMotion,Bike Light,Grip-20,White,Plastic,2728.32,1995.15,N
+PROD102,VeloCraft,Gloves,AirFlow-18,Red,Synthetic,765.04,517.05,Y
+PROD103,VeloCraft,Road Bike,Pulse-820,Gray,Aluminum,2794.55,1666.71,Y
+PROD104,TrailBlaze,Mountain Bike,Apex-400,Blue,Carbon,1158.63,686.06,N
+PROD105,UrbanWheel,Hybrid Bike,Apex-724,Blue,Aluminum,2789.01,1825.42,N
+PROD106,UrbanWheel,Hybrid Bike,Pulse-360,Green,Steel,1480.35,991.92,Y
+PROD107,trailblaze,Hybrid Bike,Sprint-701,Gray,Steel,969.91,744.38,Y
+PROD108,PeakMotion,Bike Pump,Hydro-71,red,Aluminum,357.37,205.79,Y
+PROD109,TrailBlaze,Bike Light,Lumen-11,Gray,PLASTIC,1818.79,1230.07,Y
+PROD110,PeakMotion, Bike Pump,AirFlow-55,Red,Aluminum,714.87,366.54,Y
+PROD111,TrailBlaze,Road Bike,Glide-134,Black,Carbon,1862.20,1288.04,Y
+PROD112,VeloCraft,Gloves,Flex-26,Red,Synthetic,2520.68,1863.37,Y
+PROD113,PeakMotion,Hybrid Bike,Sprint-864,Green,Steel,2787.60,1994.24,Y
+PROD114,urbanwheel,Hybrid Bike,Ridge-474,Red,Steel,305.34,177.16,Y
+PROD115,PeakMotion,Bike Pump,AirFlow-58,Black,Steel,2634.93,2003.33,Yes
+PROD116,TrailBlaze,Bike Pump,AirFlow-38,green,Steel,2078.83,1371.37,Y
+PROD117,TrailBlaze,Water Bottle,Core-14,Black,BPA-Free Plastic,986.49,604.29,Y
+PROD118,VeloCraft,Hybrid Bike,Sprint-786,White,STEEL,3038.93,2065.99,N
+PROD119,VeloCraft,Hybrid Bike,Glide-730,Black,Aluminum,1316.62,1005.90,Y
+PROD120,VeloCraft, Helmet,Flex-56,White,Polycarbonate,334.15,225.98,Y
+PROD121,velocraft,Mountain Bike,Terra-225,Black,Carbon,3037.75,2193.20,Y
+PROD122,TrailBlaze,Mountain Bike,Terra-228,White,Carbon,2522.16,1305.77,Y
+PROD123,UrbanWheel,Helmet,Flex-86,Blue,Polycarbonate,27.02,19.81,Y
+PROD124,UrbanWheel,Bike Light,Grip-13,blue,Plastic,437.40,248.54,Y
+PROD125,UrbanWheel,Mountain Bike,Apex-229,Gray,Carbon,2378.15,1483.03,Y
+PROD126,VeloCraft,Bike Pump,AirFlow-85,White,Steel,365.01,224.94,Y
+PROD127,VeloCraft,Bike Light,Core-71,Black,PLASTIC,2714.10,1603.14,N
+PROD128,trailblaze,Bike Pump,Lumen-87,White,Aluminum,490.00,240.91,Y
+PROD129,SummitRide,Water Bottle,Hydro-74,Gray,BPA-Free Plastic,1944.47,938.65,Y
+PROD130,VeloCraft, Helmet,Flex-62,Green,Polycarbonate,1096.48,657.51,Yes
+PROD131,VeloCraft,Gloves,Grip-42,Green,Synthetic,1209.03,604.96,Y
+PROD132,TrailBlaze,Road Bike,Glide-198,blue,Aluminum,2387.28,1367.85,Y
+PROD133,TrailBlaze,Gloves,Lumen-95,Gray,Synthetic,3012.68,1776.18,Y
+PROD134,SummitRide,Bike Light,Lumen-23,Gray,Plastic,1856.94,965.99,N
+PROD135,trailblaze,Helmet,AirFlow-57,Blue,Polycarbonate,383.57,207.87,N
+PROD136,SummitRide,Mountain Bike,Apex-284,Red,CARBON,887.55,622.70,Y
+PROD137,UrbanWheel,Mountain Bike,Ridge-773,Gray,Aluminum,1293.30,642.54,Y
+PROD138,SummitRide,Road Bike,Glide-529,Red,Aluminum,1461.50,733.59,Y
+PROD139,TrailBlaze,Road Bike,Terra-872,Red,Aluminum,1983.96,1334.03,N
+PROD140,VeloCraft, Water Bottle,Hydro-44,red,BPA-Free Plastic,703.94,435.79,N
+PROD141,PeakMotion,Road Bike,Ridge-783,White,Carbon,999.39,522.45,Y
+PROD142,urbanwheel,Mountain Bike,Terra-885,Red,Carbon,454.68,242.95,Y
+PROD143,VeloCraft,Mountain Bike,Terra-232,White,Carbon,1227.82,837.63,Y
+PROD144,VeloCraft,Road Bike,Glide-119,Red,Aluminum,1480.94,704.48,N
+PROD145,VeloCraft,Water Bottle,Core-61,White,BPA-FREE PLASTIC,84.37,47.01,No
+PROD146,TrailBlaze,Gloves,Core-41,Black,Synthetic,1404.32,817.52,N
+PROD147,PeakMotion,Bike Light,Lumen-31,White,Plastic,261.04,172.02,Y
+PROD148,PeakMotion,Gloves,Flex-23,white,Synthetic,483.99,249.30,Y
+PROD149,urbanwheel,Road Bike,Glide-872,Gray,Carbon,1811.81,1161.78,Y
+PROD150,UrbanWheel, Gloves,Core-70,Red,Synthetic,1425.11,783.71,Y
+PROD151,SummitRide,Gloves,Lumen-69,Red,Synthetic,1455.99,682.53,Y
+PROD152,SummitRide,Road Bike,Glide-694,Black,Carbon,1781.83,1267.42,N
+PROD153,PeakMotion,Helmet,AirFlow-29,Red,Polycarbonate,3065.47,1835.21,Y
+PROD154,TrailBlaze,Hybrid Bike,Pulse-548,White,ALUMINUM,3171.32,1975.55,Y
+PROD155,PeakMotion,Gloves,Hydro-62,Black,Synthetic,2482.35,1673.19,Y
+PROD156,peakmotion,Road Bike,Ridge-794,gray,Aluminum,1248.05,665.41,Y
+PROD157,TrailBlaze,Gloves,Lumen-49,Green,Synthetic,3097.21,2107.65,Y
+PROD158,PeakMotion,Road Bike,Pulse-910,Gray,Carbon,1063.21,523.28,Y
+PROD159,SummitRide,Water Bottle,Core-56,Red,BPA-Free Plastic,1000.81,764.50,N
+PROD160,UrbanWheel, Helmet,Flex-19,White,Polycarbonate,959.21,681.12,Yes

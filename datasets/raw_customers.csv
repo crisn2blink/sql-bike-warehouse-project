@@ -1,0 +1,121 @@
+customer_id,first_name,last_name,email,phone,city,state,signup_date,customer_segment
+CUST1001,Cris,Brown,cris.brown95@outlook.com,(460) 428-3286,Austin,TX,2022-07-29,Wholesale
+CUST1002,Daniel,Lewis,daniel.lewis12@proton.me,(642) 232-1488,Salt Lake City,UT,2022-07-11,Retail
+CUST1003,Ethan,Taylor,ethan.taylor4@proton.me,(413) 933-9928,Sacramento,CA,2024-05-09,Retail
+CUST1004,Mia,Jackson,mia.jackson1@yahoo.com,(924) 632-6574,Miami,FL,2023-07-24,Retail
+CUST1005,Levi,Harris,levi.harris14@gmail.com,(599) 299-6881,Chicago,IL,2023-12-06,Online
+CUST1006,Mason,Sanchez,mason.sanchez94@hotmail.com,(759) 327-7201,Dallas,TX,2022-06-11,Online
+CUST1007,Logan,Clark,logan.clark47@proton.me,(406) 921-2139,Sacramento,CA,2022-04-04,Wholesale
+CUST1008,Ethan,Harris,ethan.harris11@yahoo.com,(313) 589-5554,Tampa,FL,07/17/2024,Wholesale
+CUST1009,Ella,Lopez ,ella.lopez48@outlook.com,(424) 886-5374,Denver,CO,2022-05-27,Online
+CUST1010,Cris,Garcia,cris.garcia94@yahoo.com,377-673-7216,Salt Lake City,UT,2023-07-07,Wholesale
+CUST1011,CAMILA,Moore,camila.moore88@outlook.com,(267) 434-1525,Portland,OR,2023-10-09,Corporate
+CUST1012,Mason,Williams,mason.williams73@icloud.com,(532) 417-9179,Seattle,WA,2024-03-21,wholesale
+CUST1013,mia,Jones,mia.jones18@yahoo.com,(972) 774-9830,Miami,FL,2023-06-23,Wholesale
+CUST1014,Evelyn,Wilson,EVELYN.WILSON52@OUTLOOK.COM,(434) 341-9348,San Diego,CA,2024-10-07,Retail
+CUST1015,Samuel,Johnson,samuel.johnson20@icloud.com,(373) 896-7916,San Antonio,TX,2022-05-11,Corporate
+CUST1016,Sophia,Martin,sophia.martin68@outlook.com,(776)211-2876,Charlotte,NC,01/04/2025,Retail
+CUST1017,Samuel,Lee,samuel.lee15@outlook.com,(655) 361-8433, Chicago,IL,2022-01-07,Wholesale
+CUST1018,Scarlett,White ,scarlett.white65@yahoo.com,(729) 308-5889,Miami,FL,2024-11-05,Online
+CUST1019,Levi,Jones,levi.jones98@yahoo.com,(762) 997-9689,Madison,WI,Jan 02 2022,Online
+CUST1020,Ava,Thomas,ava.thomas15@outlook.com,524-445-1949,Austin,TX,2023-05-09,Online
+CUST1021,Oliver,Williams,oliver.williams9@proton.me,(338) 331-8787,Nashville,TN,2025-01-30,Retail
+CUST1022,MASON,Taylor,mason.taylor55@yahoo.com,(762) 973-4295,Sacramento,CA,2023-10-01,Corporate
+CUST1023,Sofia,Lee,sofia.lee57@proton.me,(672) 323-5061,Madison,WI,2023-04-06,Retail
+CUST1024,Ava,Smith,ava.smith71@yahoo.com,(812) 425-1117,San Diego,CA,05/26/2022,wholesale
+CUST1025,Cris,Johnson,cris.johnson9@gmail.com,(548) 272-9423,Portland,OR,2023-05-03,Retail
+CUST1026,sofia,Thomas,sofia.thomas70@yahoo.com,(950) 784-8744,Seattle,WA,2023-05-13,Corporate
+CUST1027,Grace,Wilson ,grace.wilson13@gmail.com,(884) 641-6804,Seattle,WA,2024-05-17,Corporate
+CUST1028,Mia,Ramirez,MIA.RAMIREZ87@ICLOUD.COM,(871) 300-1993,Dallas,TX,2024-04-04,Wholesale
+CUST1029,Ava,Sanchez,ava.sanchez32@yahoo.com,(404) 749-8350,San Antonio,TX,2022-10-15,Corporate
+CUST1030,Lucas,Rodriguez,lucas.rodriguez32@gmail.com,663-763-2604,Charlotte,NC,2022-04-14,Wholesale
+CUST1031,Harper,Clark,harper.clark12@yahoo.com,(380) 616-8956,Austin,TX,2024-09-12,Retail
+CUST1032,Nora,Gonzalez,nora.gonzalez22@hotmail.com,(212)599-5345,Dallas,TX,07/20/2024,Retail
+CUST1033,ISABELLA,Thompson,isabella.thompson85@icloud.com,(708) 358-4111,Salt Lake City,UT,2023-08-31,Retail
+CUST1034,Noah,Jackson,noah.jackson8@icloud.com,(531) 258-1821, Salt Lake City,UT,2024-09-03,Online
+CUST1035,Hannah,Ramirez,hannah.ramirez21@gmail.com,(730) 282-4044,Boulder,CO,2022-05-21,Online
+CUST1036,Oliver,Perez ,oliver.perez52@gmail.com,(793) 452-1651,Portland,OR,2022-06-17,corporate
+CUST1037,Sofia,Jackson,sofia.jackson67@outlook.com,(477) 409-6147,San Diego,CA,2023-05-04,Retail
+CUST1038,Sophia,Jones,sophia.jones59@outlook.com,(979) 274-1152,Tampa,FL,Jul 27 2024,Online
+CUST1039,evelyn,Brown,evelyn.brown69@yahoo.com,(728) 471-3170,Houston,TX,2023-12-16,Retail
+CUST1040,Scarlett,Davis,scarlett.davis37@yahoo.com,658-756-5956,Madison,WI,12/19/2024,Retail
+CUST1041,Sofia,Clark,sofia.clark39@icloud.com,(316) 337-5333,Salt Lake City,UT,2022-08-25,Retail
+CUST1042,Daniel,Moore,DANIEL.MOORE35@OUTLOOK.COM,(829) 415-6617,Phoenix,AZ,2023-02-21,Wholesale
+CUST1043,Cris,Ramirez,cris.ramirez65@hotmail.com,(467) 252-2512,Miami,FL,2024-05-17,Retail
+CUST1044,NOAH,Smith,noah.smith99@yahoo.com,(862) 468-3647,Chicago,IL,2024-06-23,Online
+CUST1045,Camila,Wilson ,camila.wilson2@gmail.com,(287) 907-3442,Salt Lake City,UT,2025-01-22,Retail
+CUST1046,Ella,Lopez,ella.lopez71@yahoo.com,(650) 330-1685,San Diego,CA,2023-09-24,Retail
+CUST1047,Scarlett,Robinson,scarlett.robinson46@yahoo.com,(908) 455-2684,Dallas,TX,2023-12-26,Online
+CUST1048,Scarlett,Ramirez,scarlett.ramirez80@icloud.com,(368)442-3662,Raleigh,NC,12/29/2022,corporate
+CUST1049,Liam,Garcia,liam.garcia53@icloud.com,(962) 454-5371,Chicago,IL,2022-11-23,Wholesale
+CUST1050,Elijah,Gonzalez,elijah.gonzalez61@yahoo.com,414-671-6728,Dallas,TX,2023-09-18,Retail
+CUST1051,Ethan,Smith,ethan.smith52@outlook.com,(495) 271-5573, Seattle,WA,2023-12-21,Wholesale
+CUST1052,amelia,Gonzalez,amelia.gonzalez43@gmail.com,(328) 467-3925,Salt Lake City,UT,2023-06-28,Retail
+CUST1053,Elijah,Martin,elijah.martin45@icloud.com,(531) 646-9379,Raleigh,NC,2022-08-25,Corporate
+CUST1054,Scarlett,Jackson ,scarlett.jackson33@gmail.com,(935) 646-1027,Seattle,WA,2024-11-30,Online
+CUST1055,SOFIA,White,sofia.white47@hotmail.com,(281) 880-6409,Seattle,WA,2023-10-05,Wholesale
+CUST1056,Nora,Brown,NORA.BROWN65@OUTLOOK.COM,(892) 618-6344,Tampa,FL,04/04/2024,Wholesale
+CUST1057,Logan,Moore,logan.moore25@hotmail.com,(890) 588-3851,Phoenix,AZ,Sep 09 2023,Corporate
+CUST1058,Harper,Clark,harper.clark39@outlook.com,(425) 640-6279,Austin,TX,2024-08-10,Corporate
+CUST1059,Mia,Perez,mia.perez66@hotmail.com,(963) 373-2389,Seattle,WA,2023-08-05,Online
+CUST1060,Sofia,Lee,sofia.lee43@gmail.com,979-440-6085,Sacramento,CA,2023-04-06,retail
+CUST1061,Mateo,Smith,mateo.smith32@hotmail.com,(835) 986-2193,Dallas,TX,2024-07-21,Corporate
+CUST1062,Scarlett,Lee,scarlett.lee25@icloud.com,(923) 593-9099,San Diego,CA,2024-03-29,Retail
+CUST1063,Mateo,Lee ,mateo.lee97@gmail.com,(645) 424-3881,Austin,TX,2024-11-26,Corporate
+CUST1064,Noah,Moore,noah.moore16@hotmail.com,(346)675-9702,Portland,OR,02/18/2025,Online
+CUST1065,ava,Harris,ava.harris79@icloud.com,(726) 636-9976,Charlotte,NC,2024-07-02,Retail
+CUST1066,DANIEL,Ramirez,daniel.ramirez58@outlook.com,(979) 453-5543,Nashville,TN,2024-12-03,Corporate
+CUST1067,Cris,Davis,cris.davis57@gmail.com,(940) 492-4841,Miami,FL,2023-07-11,Retail
+CUST1068,Ava,Lewis,ava.lewis11@yahoo.com,(364) 436-7275, Salt Lake City,UT,2022-11-09,Wholesale
+CUST1069,Levi,Williams,levi.williams53@outlook.com,(765) 677-7812,Raleigh,NC,2022-05-08,Retail
+CUST1070,Ella,Wilson,ELLA.WILSON99@PROTON.ME,922-220-7232,Atlanta,GA,2024-09-03,Retail
+CUST1071,Emma,Martinez,emma.martinez54@proton.me,(975) 952-9947,Atlanta,GA,2023-03-28,Corporate
+CUST1072,Ethan,Rodriguez ,ethan.rodriguez63@gmail.com,(608) 544-7624,Raleigh,NC,12/05/2022,corporate
+CUST1073,Hannah,Jones,hannah.jones69@gmail.com,(613) 806-1444,Sacramento,CA,2022-06-21,Wholesale
+CUST1074,Isabella,Jones,isabella.jones24@gmail.com,(476) 588-6363,Charlotte,NC,2023-03-10,Corporate
+CUST1075,Ava,Hernandez,ava.hernandez36@hotmail.com,(468) 283-8705,Atlanta,GA,2022-02-09,Wholesale
+CUST1076,Harper,Johnson,harper.johnson29@icloud.com,(280) 999-1659,Madison,WI,Mar 05 2022,Retail
+CUST1077,LEVI,Clark,levi.clark80@yahoo.com,(454) 329-8758,Austin,TX,2022-08-23,Online
+CUST1078,levi,Anderson,levi.anderson99@outlook.com,(381) 820-2876,Miami,FL,2022-12-02,Retail
+CUST1079,Elijah,Jackson,elijah.jackson40@proton.me,(903) 584-7498,Austin,TX,2023-02-11,Retail
+CUST1080,Evelyn,Thompson,evelyn.thompson14@icloud.com,518-900-2983,Portland,OR,03/26/2022,Retail
+CUST1081,Harper,Wilson ,harper.wilson9@proton.me,(873) 549-1207,Madison,WI,2024-05-10,Corporate
+CUST1082,Elijah,Wilson,elijah.wilson82@hotmail.com,(934) 356-8135,Madison,WI,2022-12-27,Wholesale
+CUST1083,Amelia,Lee,amelia.lee79@proton.me,(705) 676-8136,Miami,FL,2023-07-04,Retail
+CUST1084,Nora,Davis,NORA.DAVIS36@HOTMAIL.COM,(459) 968-8613,Houston,TX,2024-02-16,retail
+CUST1085,Liam,Thomas,liam.thomas24@hotmail.com,(427) 563-5232, Chicago,IL,2023-11-29,Retail
+CUST1086,Scarlett,Martin,scarlett.martin72@gmail.com,(739) 395-2402,Miami,FL,2023-05-10,Wholesale
+CUST1087,Isabella,Thomas,isabella.thomas98@yahoo.com,(917) 687-9041,Salt Lake City,UT,2024-07-06,Retail
+CUST1088,OLIVER,Martinez,oliver.martinez52@icloud.com,(459) 513-7046,Portland,OR,08/27/2024,Online
+CUST1089,Amelia,Lopez,amelia.lopez96@proton.me,(548) 560-8434,Raleigh,NC,2023-07-09,Retail
+CUST1090,Mason,Davis ,mason.davis93@yahoo.com,533-322-9779,San Antonio,TX,2023-01-15,Retail
+CUST1091,levi,White,levi.white36@icloud.com,(813) 978-9595,Nashville,TN,2023-08-03,Retail
+CUST1092,Ella,Miller,ella.miller30@outlook.com,(393) 509-1231,Tampa,FL,2024-12-29,Retail
+CUST1093,Mason,Johnson,mason.johnson71@outlook.com,(924) 329-9042,Dallas,TX,2022-07-30,Retail
+CUST1094,Evelyn,Martinez,evelyn.martinez62@hotmail.com,(558) 388-1841,Nashville,TN,2023-06-02,Corporate
+CUST1095,Elijah,Clark,elijah.clark52@hotmail.com,(285) 790-1878,Houston,TX,Nov 07 2022,Retail
+CUST1096,Grace,Jackson,grace.jackson11@yahoo.com,(331)771-7818,Tampa,FL,04/08/2023,online
+CUST1097,Sophia,Anderson,sophia.anderson39@proton.me,(649) 512-1986,Charlotte,NC,2022-07-23,Retail
+CUST1098,Cris,Miller,CRIS.MILLER85@GMAIL.COM,(370) 445-3847,Miami,FL,2025-02-04,Retail
+CUST1099,LUCAS,Smith ,lucas.smith58@icloud.com,(818) 681-5771,Raleigh,NC,2022-03-08,Retail
+CUST1100,Logan,Thompson,logan.thompson90@hotmail.com,282-903-4824,Tampa,FL,2023-06-26,Wholesale
+CUST1101,Evelyn,Perez,evelyn.perez55@gmail.com,(767) 430-3441,Seattle,WA,2023-06-29,Retail
+CUST1102,Oliver,Johnson,oliver.johnson40@proton.me,(976) 782-5728, Denver,CO,2024-06-18,Retail
+CUST1103,Mia,Thompson,mia.thompson90@hotmail.com,(488) 712-9847,Tampa,FL,2024-10-08,Corporate
+CUST1104,oliver,Martin,oliver.martin56@icloud.com,(540) 818-5102,Dallas,TX,02/22/2022,Retail
+CUST1105,Ethan,Perez,ethan.perez76@gmail.com,(898) 475-1659,San Diego,CA,2022-12-25,Corporate
+CUST1106,Amelia,Lee,amelia.lee36@yahoo.com,(809) 646-9056,Charlotte,NC,2022-07-06,Corporate
+CUST1107,Emma,Wilson,emma.wilson42@icloud.com,(317) 364-6403,Chicago,IL,2024-04-23,Wholesale
+CUST1108,Charlotte,Martinez ,charlotte.martinez98@proton.me,(247) 665-2442,Atlanta,GA,2023-10-07,retail
+CUST1109,Ava,Brown,ava.brown66@gmail.com,(883) 755-8569,Atlanta,GA,2024-04-26,Retail
+CUST1110,LEVI,Taylor,levi.taylor80@hotmail.com,850-652-1845,Madison,WI,2023-02-21,Retail
+CUST1111,Harper,Jones,harper.jones57@icloud.com,(706) 324-1472,Tampa,FL,2023-05-06,Wholesale
+CUST1112,Lucas,Martinez,LUCAS.MARTINEZ2@PROTON.ME,(627)295-4681,Salt Lake City,UT,08/21/2022,Corporate
+CUST1113,Elijah,Lee,elijah.lee64@icloud.com,(508) 721-5479,Phoenix,AZ,2024-04-30,Corporate
+CUST1114,Charlotte,Davis,charlotte.davis71@yahoo.com,(602) 395-9327,Charlotte,NC,Oct 07 2022,Retail
+CUST1115,Mason,Harris,mason.harris44@proton.me,(483) 202-5634,Raleigh,NC,2023-09-04,Online
+CUST1116,Evelyn,Perez,evelyn.perez20@hotmail.com,(761) 695-6654,Nashville,TN,2023-11-12,Online
+CUST1117,samuel,Moore ,samuel.moore59@outlook.com,(403) 914-4912,Atlanta,GA,2024-02-24,Retail
+CUST1118,Nora,Harris,nora.harris6@outlook.com,(972) 684-7246,Raleigh,NC,2024-03-01,Wholesale
+CUST1119,Grace,Clark,grace.clark64@gmail.com,(339) 714-6439, Phoenix,AZ,2022-07-25,Corporate
+CUST1120,Elijah,Taylor,elijah.taylor2@icloud.com,357-619-3529,Charlotte,NC,06/03/2022,corporate
