@@ -26,7 +26,8 @@ CREATE TABLE silver.chat_raw_customers
     city NVARCHAR(50),
     state NVARCHAR(50),
     signup_date NVARCHAR(50),
-    customer_segment NVARCHAR(50)
+    customer_segment NVARCHAR(50),
+    dwh_create_date DATETIME2 DEFAULT GETDATE()
 );
 --Create table for raw_products.csv
 IF OBJECT_ID ('silver.chat_raw_products', 'U') IS NOT NULL
@@ -41,7 +42,8 @@ CREATE TABLE silver.chat_raw_products
     material NVARCHAR(50),
     list_price NVARCHAR(50),
     standard_cost NVARCHAR(50),
-    is_active NVARCHAR(50)
+    is_active NVARCHAR(50),
+    dwh_create_date DATETIME2 DEFAULT GETDATE()
 );
 --Create table for raw_sales.csv
 IF OBJECT_ID ('silver.chat_raw_sales', 'U') IS NOT NULL
@@ -57,5 +59,6 @@ CREATE TABLE silver.chat_raw_sales
     sales_amount NVARCHAR(50),
     sales_channel NVARCHAR(50),
     store_name NVARCHAR(50),
-    payment_method NVARCHAR(50)
+    payment_method NVARCHAR(50),
+    dwh_create_date DATETIME2 DEFAULT GETDATE()
 );
