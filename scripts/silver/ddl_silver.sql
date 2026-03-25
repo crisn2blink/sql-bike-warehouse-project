@@ -22,6 +22,7 @@ CREATE TABLE silver.chat_raw_customers
     first_name NVARCHAR(50),
     last_name NVARCHAR(50),
     email NVARCHAR(100),
+    email_validity NVARCHAR(50),
     phone NVARCHAR(50),
     city NVARCHAR(50),
     state NVARCHAR(50),
