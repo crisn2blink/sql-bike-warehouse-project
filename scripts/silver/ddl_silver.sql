@@ -29,6 +29,8 @@ CREATE TABLE silver.chat_raw_customers
     signup_date NVARCHAR(50),
     customer_segment NVARCHAR(50),
     dwh_create_date DATETIME2 DEFAULT GETDATE()
+
+CONSTRAINT PK_bike_customers PRIMARY KEY (customeer_id)
 );
 --Create table for raw_products.csv
 IF OBJECT_ID ('silver.chat_raw_products', 'U') IS NOT NULL
