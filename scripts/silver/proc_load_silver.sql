@@ -105,4 +105,4 @@ SELECT
 FROM CTE_standardization_customers
 
 SELECT*
-FROM silver.chat_raw_customers
+FROM silver.chat_raw_customers;
