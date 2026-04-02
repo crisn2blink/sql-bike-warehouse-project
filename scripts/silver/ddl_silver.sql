@@ -44,10 +44,11 @@ CREATE TABLE silver.chat_raw_products
     brand NVARCHAR(50),
     category NVARCHAR(50),
     model_name NVARCHAR(50),
+    invalid_model INT,
     color NVARCHAR(50),
     material NVARCHAR(50),
-    list_price NVARCHAR(50),
-    standard_cost NVARCHAR(50),
+    list_price DECIMAL(10,2),
+    standard_cost DECIMAL(10,2),
     is_active NVARCHAR(50),
     dwh_create_date DATETIME2 DEFAULT GETDATE()
 
