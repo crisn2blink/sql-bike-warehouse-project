@@ -106,3 +106,76 @@ FROM CTE_standardization_customers
 
 SELECT*
 FROM silver.chat_raw_customers;
+/*=======================================
+silver.chat_raw_products
+=======================================*/
+TRUNCATE  TABLE silver.chat_raw_products;
+WITH CTE_standardization_products AS (
+    SELECT
+        product_id,
+        TRIM(brand) AS brand,
+        category,
+        TRIM(model_name) AS model_name,
+        TRIM(color) AS color,
+        material,
+        list_price,
+        standard_cost,
+        TRIM(is_active) AS is_active
+FROM bronze.chat_raw_products
+)
+INSERT INTO silver.chat_raw_products
+(
+product_id,
+brand,
+category,
+model_name,
+invalid_model,
+color,
+material,
+list_price,
+standard_cost,
+is_active
+)
+SELECT
+    UPPER(TRIM(product_id)) AS product_id,
+    CASE
+        WHEN brand is NULL OR brand = '' THEN NULL
+        WHEN brand = 'peakmotion' THEN 'PeakMotion'
+        WHEN brand = 'trailblaze' THEN 'TrailBlaze'
+        WHEN brand = 'urbanwheel' THEN 'UrbanWheel'
+        WHEN brand = 'velocraft' THEN 'VeloCraft'
+        ELSE brand
+    END AS brand,
+    CASE
+        WHEN category is NULL OR TRIM(category) = '' THEN NULL
+        ELSE TRIM(category)
+    END AS category,
+    model_name,
+    CASE
+        WHEN model_name IS NULL or model_name = '' THEN 1
+        --must contain exactly one dash
+        WHEN LEN(model_name) - LEN(REPLACE(model_name, '-', '')) != 1 THEN 1
+        --left side must be letters only
+        WHEN LEFT(model_name, CHARINDEX('-', model_name) -1) LIKE '%[^A-Za-z]%' THEN 1
+        --right side must be numbers only
+        WHEN RIGHT(model_name, LEN(model_name) - CHARINDEX('-', model_name)) LIKE '%[^0-9]%' THEN 1
+        --prevents empty left side
+        WHEN CHARINDEX('-', model_name) = 1 THEN 1
+        --prevents empty right side
+        WHEN CHARINDEX('-', model_name) = LEN(model_name) THEN 1
+        ELSE 0
+    END AS invalid_model,
+    CASE
+        WHEN color IS NULL OR color = '' THEN NULL
+        ELSE UPPER(LEFT(color, 1)) + LOWER(SUBSTRING(color, 2, LEN(color)))
+    END AS color,
+    UPPER(TRIM(material)) AS material,
+    list_price,
+    standard_cost,
+    CASE
+        WHEN is_active IS NULL OR is_active = '' THEN NULL
+        WHEN is_active = 'Y' THEN 'Yes'
+        WHEN is_active = 'N' THEN 'No'
+        ELSE is_active
+    END AS is_active
+FROM CTE_standardization_products;
