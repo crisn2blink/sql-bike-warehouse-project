@@ -1,6 +1,8 @@
+/*=============================================
 --silver.chat_raw_customer
+=============================================*/
 TRUNCATE  TABLE silver.chat_raw_customers;
-WITH CTE_standardization_customers AS (
+;WITH CTE_standardization_customers AS (
     SELECT
         customer_id,
         first_name,
@@ -14,13 +16,14 @@ WITH CTE_standardization_customers AS (
         city,
         state,
         signup_date,
+        TRY_CAST(TRIM(signup_date) AS DATE) AS signup_date_cast,
         customer_segment,
         phone AS phone_raw,
         REPLACE(
             REPLACE(
                 REPLACE(
                     REPLACE(
-                        REPLACE(phone, '(', ''),
+                        REPLACE(TRIM(phone), '(', ''),
                     ')', ''),
                 '-', ''),
             ' ', ''),
@@ -40,10 +43,14 @@ is_valid_phone,
 city,
 state,
 signup_date,
+signup_date_failed,
 customer_segment
 )
 SELECT
-    UPPER(TRIM(customer_id)) AS customer_id,
+    CASE
+        WHEN customer_id IS NULL OR customer_id = '' THEN NULL
+        ELSE UPPER(TRIM(customer_id))
+    END AS customer_id,
     CASE
         WHEN first_name IS NULL OR TRIM(first_name) = '' THEN NULL
         ELSE UPPER(TRIM(LEFT(first_name, 1))) + LOWER(TRIM(SUBSTRING(first_name, 2, LEN(first_name)))
@@ -58,7 +65,7 @@ SELECT
     email,
     CASE
         WHEN email IS NULL OR email = '' THEN 0
-        WHEN email LIKE '% %' THEN '0'
+        WHEN email LIKE '% %' THEN 0
         WHEN (LEN(email)) - LEN(REPLACE(email, '@', '')) <> 1 THEN 0
         WHEN email NOT LIKE '%_@_%._%' THEN 0
         WHEN TRIM(LEFT(email, 1)) IN ('@', '.') THEN 0
@@ -94,18 +101,19 @@ SELECT
     END AS state,
     CASE
         WHEN signup_date IS NULL OR TRIM(signup_date) = '' THEN NULL
-        ELSE TRY_CAST(CAST(signup_date AS NVARCHAR(50)) AS DATE
-        )
+        ELSE signup_date_cast
     END AS signup_date,
     CASE
+        WHEN signup_date IS NULL OR TRIM(signup_date) = '' THEN 0
+        WHEN signup_date_cast IS NULL THEN 1
+        ELSE 0
+    END AS signup_date_failed,
+    CASE
         WHEN customer_segment IS NULL OR TRIM(customer_segment) = '' THEN NULL
-        ELSE UPPER(LEFT(TRIM(customer_segment), 1)) + LOWER(SUBSTRING(TRIM(customer_segment), 2, LEN(customer_segment))
-        )
+        ELSE UPPER(LEFT(TRIM(customer_segment), 1)) + LOWER(SUBSTRING(TRIM(customer_segment), 2, LEN(TRIM(customer_segment))
+        ))
     END AS customer_segment
-FROM CTE_standardization_customers
-
-SELECT*
-FROM silver.chat_raw_customers;
+FROM CTE_standardization_customers;
 /*=======================================
 silver.chat_raw_products
 =======================================*/
