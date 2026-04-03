@@ -30,6 +30,7 @@ CREATE TABLE silver.chat_raw_customers
     city NVARCHAR(50),
     state NVARCHAR(50),
     signup_date DATE(50),
+    signup_date_failed NVARCHAR(50),
     customer_segment NVARCHAR(50),
     dwh_create_date DATETIME2 DEFAULT GETDATE()
 
