@@ -145,7 +145,10 @@ standard_cost,
 is_active
 )
 SELECT
-    UPPER(TRIM(product_id)) AS product_id,
+    CASE
+        WHEN product_id IS NULL OR product_id = '' THEN NULL
+        ELSE UPPER(TRIM(product_id))
+    END AS product_id,
     CASE
         WHEN brand is NULL OR brand = '' THEN NULL
         WHEN brand = 'peakmotion' THEN 'PeakMotion'
