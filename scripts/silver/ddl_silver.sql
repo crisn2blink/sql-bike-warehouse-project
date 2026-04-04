@@ -18,7 +18,7 @@ IF OBJECT_ID ('silver.chat_raw_customers', 'U') IS NOT NULL
     DROP TABLE silver.chat_raw_customers;
 CREATE TABLE silver.chat_raw_customers
 (
-    customer_id NVARCHAR(50),
+    customer_id NVARCHAR(50) NOT NULL,
     first_name NVARCHAR(50),
     last_name NVARCHAR(50),
     email_raw NVARCHAR(100),
@@ -32,7 +32,7 @@ CREATE TABLE silver.chat_raw_customers
     signup_date DATE,
     signup_date_failed NVARCHAR(50),
     customer_segment NVARCHAR(50),
-    dwh_create_date DATETIME2 DEFAULT GETDATE()
+    dwh_create_date DATETIME2 DEFAULT GETDATE(),
 
   CONSTRAINT PK_bike_customers PRIMARY KEY (customer_id)
 );
@@ -41,7 +41,7 @@ IF OBJECT_ID ('silver.chat_raw_products', 'U') IS NOT NULL
     DROP TABLE silver.chat_raw_products;
 CREATE TABLE silver.chat_raw_products
 (
-    product_id NVARCHAR(50),
+    product_id NVARCHAR(50) NOT NULL,
     brand NVARCHAR(50),
     category NVARCHAR(50),
     model_name NVARCHAR(50),
@@ -51,7 +51,7 @@ CREATE TABLE silver.chat_raw_products
     list_price DECIMAL(10,2),
     standard_cost DECIMAL(10,2),
     is_active NVARCHAR(50),
-    dwh_create_date DATETIME2 DEFAULT GETDATE()
+    dwh_create_date DATETIME2 DEFAULT GETDATE(),
 
   CONSTRAINT PK_bike_products PRIMARY KEY (product_id)
 );
@@ -60,15 +60,25 @@ IF OBJECT_ID ('silver.chat_raw_sales', 'U') IS NOT NULL
     DROP TABLE silver.chat_raw_sales;
 CREATE TABLE silver.chat_raw_sales
 (
-    sale_id NVARCHAR(50),
+    sale_id NVARCHAR(50) NOT NULL,
     customer_id NVARCHAR(50),
     product_id NVARCHAR(50),
-    order_date NVARCHAR(50),
-    quantity NVARCHAR(50),
-    unit_price NVARCHAR(50),
-    sales_amount NVARCHAR(50),
+    order_date DATE,
+    order_date_failed INT,
+    quantity INT,
+    quantity_failed INT,
+    unit_price DECIMAL(10,2),
+    unit_price_failed INT,
+    sales_amount DECIMAL(10,2),
+    sales_amount_failed INT,
     sales_channel NVARCHAR(50),
     store_name NVARCHAR(50),
     payment_method NVARCHAR(50),
-    dwh_create_date DATETIME2 DEFAULT GETDATE()
+    dwh_create_date DATETIME2 DEFAULT GETDATE(),
+
+  CONSTRAINT FK_customers
+    FOREIGN KEY (customer_id) REFERENCES silver.chat_raw_customers (customer_id),
+
+  CONSTRAINT FK_products
+    FOREIGN KEY (product_id) REFERENCES silver.chat_raw_products (product_id)
 );
