@@ -118,7 +118,7 @@ FROM CTE_standardization_customers;
 silver.chat_raw_products
 =======================================*/
 TRUNCATE TABLE silver.chat_raw_products;
-WITH CTE_standardization_products AS (
+;WITH CTE_standardization_products AS (
     SELECT
         product_id,
         TRIM(brand) AS brand,
