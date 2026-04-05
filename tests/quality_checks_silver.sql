@@ -223,3 +223,109 @@ AND standard_cost IS NOT NULL;
 SELECT DISTINCT
 is_active COLLATE SQL_Latin1_General_CP1_CS_AS AS is_active
 FROM bronze.chat_raw_products;
+
+/*=======================================================
+Profiling queries for table: bronze.chat_raw_sales
+=======================================================*/
+/*Profiling Query 0: Checking all columns for leading/trailing spaces, tabs, line feeds, 
+  carriage returns, and non-breaking spaces*/
+SELECT
+    sale_id,
+    CONCAT(
+        CASE WHEN sale_id != TRIM(sale_id) THEN 'TRIM|' ELSE '' END,
+        CASE WHEN sale_id LIKE '%' + CHAR(9)  + '%' THEN 'TAB|'  ELSE '' END,
+        CASE WHEN sale_id LIKE '%' + CHAR(10) + '%' THEN 'LF|'   ELSE '' END,
+        CASE WHEN sale_id LIKE '%' + CHAR(13) + '%' THEN 'CR|'   ELSE '' END,
+        CASE WHEN sale_id LIKE '%' + CHAR(160)+ '%' THEN 'NBSP|' ELSE '' END
+    ) AS reasons
+FROM bronze.chat_raw_sales
+WHERE sale_id != TRIM(sale_id)
+   OR sale_id LIKE '%' + CHAR(9) + '%'
+   OR sale_id LIKE '%' + CHAR(10) + '%'
+   OR sale_id LIKE '%' + CHAR(13) + '%'
+   OR sale_id LIKE '%' + CHAR(160) + '%';
+
+--Profiling Query 1: Verifying that the table key has only unique values
+SELECT
+sale_id,
+COUNT(*) AS repeated
+FROM bronze.chat_raw_sales
+GROUP BY sale_id
+HAVING COUNT(*) > 1;
+
+--Profiling Query 2: Verifying that PK has no NULLS or blanks
+SELECT
+sale_id
+FROM bronze.chat_raw_sales
+WHERE sale_id IS NULL or sale_id = ''
+
+--Profiling Query 3: Checking for values that do not adhere to the PK pattern
+SELECT
+sale_id
+FROM bronze.chat_raw_sales
+WHERE sale_id NOT LIKE 'SALE[0-9][0-9][0-9][0-9][0-9]'
+OR LEN(sale_id) <> 9;
+
+--Profiling Query 4: Verify that all foreign key values are found in the PK table
+SELECT
+customer_id
+FROM bronze.chat_raw_sales
+WHERE customer_id NOT IN(SELECT customer_id FROM silver.chat_raw_customers)
+
+--Profiling Query 5: Verify that all foreign key values are found in the PK table
+SELECT
+product_id
+FROM bronze.chat_raw_sales
+WHERE product_id NOT IN(SELECT product_id FROM silver.chat_raw_products)
+
+--Profiling Query 6: Verify that all values in order_date are DATE type compatible
+SELECT
+order_date
+FROM bronze.chat_raw_sales
+WHERE TRY_CAST(order_date AS DATE) IS NULL
+AND order_date IS NOT NULL
+AND order_date != '';
+
+--Profiling Query 7: Check all of the DISTINCT values (w/ casing sensitivity) for quantity
+SELECT DISTINCT
+quantity COLLATE SQL_Latin1_General_CP1_CS_AS AS quantity
+FROM bronze.chat_raw_sales;
+
+--Profiling Query 8: Check all the values to see if these are INT type compatible
+SELECT
+quantity
+FROM bronze.chat_raw_sales
+WHERE TRY_CAST(quantity AS INT) IS NULL
+AND quantity IS NOT NULL
+AND quantity != '';
+
+--Profiling Query 9: Check to see if there are any values that fail TRY_CAST DECIMAL(10,2) in unit_price
+SELECT
+unit_price
+FROM bronze.chat_raw_sales
+WHERE TRY_CAST(unit_price AS DECIMAL(10,2)) IS NULL
+AND unit_price IS NOT NULL
+AND unit_price != '';
+
+--Profiling Query 10: Check to see if there are any values that fail TRY_CAST DECIMAL(10,2) in sales_amount
+SELECT
+sales_amount
+FROM bronze.chat_raw_sales
+WHERE TRY_CAST(sales_amount AS DECIMAL(10,2)) IS NULL
+AND sales_amount IS NOT NULL
+AND sales_amount != '';
+
+--Profiling Query 11: Check all of the DISTINCT values (w/ casing sensitivity) for sales_channel
+SELECT DISTINCT
+sales_channel COLLATE SQL_Latin1_General_CP1_CS_AS AS sales_channel
+FROM bronze.chat_raw_sales;
+
+--Profiling Query 12: Check all of the DISTINCT values (w/ casing sensitivity) for store_name
+SELECT DISTINCT
+store_name COLLATE SQL_Latin1_General_CP1_CS_AS AS store_name
+FROM bronze.chat_raw_sales;
+
+--Profiling Query 13: Check all of the DISTINCT values (w/ casing sensitivity) for payment_method
+SELECT DISTINCT
+payment_method COLLATE SQL_Latin1_General_CP1_CS_AS AS payment_method
+FROM bronze.chat_raw_sales;
