@@ -1,7 +1,7 @@
 /*=============================================
 --silver.chat_raw_customer
 =============================================*/
-TRUNCATE  TABLE silver.chat_raw_customers;
+TRUNCATE TABLE silver.chat_raw_customers;
 ;WITH CTE_standardization_customers AS (
     SELECT
         customer_id,
@@ -117,7 +117,7 @@ FROM CTE_standardization_customers;
 /*=======================================
 silver.chat_raw_products
 =======================================*/
-TRUNCATE  TABLE silver.chat_raw_products;
+TRUNCATE TABLE silver.chat_raw_products;
 WITH CTE_standardization_products AS (
     SELECT
         product_id,
