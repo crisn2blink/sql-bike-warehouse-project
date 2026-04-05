@@ -76,9 +76,5 @@ CREATE TABLE silver.chat_raw_sales
     payment_method NVARCHAR(50),
     dwh_create_date DATETIME2 DEFAULT GETDATE(),
 
-  CONSTRAINT FK_customers
-    FOREIGN KEY (customer_id) REFERENCES silver.chat_raw_customers (customer_id),
-
-  CONSTRAINT FK_products
-    FOREIGN KEY (product_id) REFERENCES silver.chat_raw_products (product_id)
+  CONSTRAINT PK_bike_sales PRIMARY KEY (sale_id)
 );
