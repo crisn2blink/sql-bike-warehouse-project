@@ -86,7 +86,7 @@ OR email = ''
 OR email NOT LIKE '%_@_%._%'
 OR email LIKE '% %'
 OR LEN(email) - LEN(REPLACE(email, '@', '')) <> 1
-OR email LIKE '%..%';
+OR email LIKE '%..%'
 OR LEFT(email, 1) IN('@', '.')
 OR RIGHT(email, 1) IN('@', '.');
 
