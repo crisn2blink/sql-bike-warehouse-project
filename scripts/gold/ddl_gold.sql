@@ -30,8 +30,7 @@ CREATE VIEW gold.dim_customers AS
         phone,
         state,
         city,
-        signup_date,
-        dwh_create_date
+        signup_date
     FROM silver.chat_raw_customers;
 GO
 
@@ -53,8 +52,7 @@ CREATE VIEW gold.dim_products AS
         material,
         list_price AS selling_price,
         standard_cost AS cost,
-        is_active,
-        dwh_create_date
+        is_active
     FROM silver.chat_raw_products;
 GO
 
@@ -76,8 +74,7 @@ CREATE VIEW gold.fact_sales AS
         s.sales_amount AS sales_revenue,
         s.sales_channel,
         s.store_name,
-        s.payment_method,
-        s.dwh_create_date
+        s.payment_method
     FROM silver.chat_raw_sales AS s
     LEFT JOIN gold.dim_customers AS c
     ON s.customer_id = c.customer_id
