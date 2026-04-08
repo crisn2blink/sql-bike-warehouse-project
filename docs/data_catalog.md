@@ -11,17 +11,15 @@ The Gold Layer is the business-level data representation, structured to support 
 
 | Column Name      | Data Type     | Description                                                                                   |
 |------------------|---------------|-----------------------------------------------------------------------------------------------|
-| customer_key     | INT           | Surrogate key uniquely identifying each customer record in the dimension table.               |
-| customer_id      | INT           | Unique numerical identifier assigned to each customer.                                        |
-| first_name  | NVARCHAR(50)  | Alphanumeric identifier representing the customer, used for tracking and referencing.         |
-| last_name       | NVARCHAR(50)  | The customer's first name, as recorded in the system.                                         |
-| email      | NVARCHAR(50)  | The customer's last name or family name.                                                     |
-| phone          | NVARCHAR(50)  | The country of residence for the customer (e.g., 'Australia').                               |
-| state   | NVARCHAR(50)  | The marital status of the customer (e.g., 'Married', 'Single').                              |
-| city           | NVARCHAR(50)  | The gender of the customer (e.g., 'Male', 'Female', 'n/a').                                  |
-| signup_date        | DATE          | The date of birth of the customer, formatted as YYYY-MM-DD (e.g., 1971-10-06).               |
-| create_date      | DATE          | The date and time when the customer record was created in the system|
-
+| customer_key     | BIGINT        | Surrogate key uniquely identifying each customer record in the dimension table.               |
+| customer_id      | NVARCHAR(50)  | Unique numerical identifier assigned to each customer.                                        |
+| first_name       | NVARCHAR(50)  | The customer's first name, as recorded in the system.                                         |
+| last_name        | NVARCHAR(50)  | The customer's last name, as recorded in the system.                                          |
+| email            | NVARCHAR(100) | The customer's email address, as recorded in the system.                                      |
+| phone            | NVARCHAR(50)  | The customer's email address, as recorded in the system.                                      |
+| state            | NVARCHAR(50)  | The customer's state of residence within the USA abbreviated, (e.g., 'TX', 'MN').             |
+| city             | NVARCHAR(50)  | The customer's state of residence within the USA                                              |
+| signup_date      | DATE          | The date the customer was registered in the system: YYYY-MM-DD (e.g., 1971-10-06).            |
 ---
 
 ### 2. **gold.dim_products**
