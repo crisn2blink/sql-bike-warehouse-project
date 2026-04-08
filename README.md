@@ -16,13 +16,13 @@ This project demonstrates comprehensive data warehousing and analytics solutions
   
   This project involves:
   
-  1. **Data Architecture**: Designing a Modern Data Warehouse Using Medallion Architecture **Bronze**, **Silver**, and **Gold** layers.
+1. **Data Architecture**: Designing a Modern Data Warehouse Using Medallion Architecture **Bronze**, **Silver**, and **Gold** layers.
 2. **ETL Pipelines**: Extracting, transforming, and loading data from source systems into the warehouse.
 3. **Data Modeling**: Developing fact and dimension tables optimized for analytical queries.
 4. **Analytics & Reporting**: Creating SQL-based reports and dashboards for actionable insights.
 
 🎯 This repository is an excellent resource for professionals and students looking to showcase expertise in:
-  - SQL Development
+- SQL Development
 - Data Architect
 - Data Engineering  
 - ETL Pipeline Developer  
@@ -70,23 +70,23 @@ This project demonstrates comprehensive data warehousing and analytics solutions
 ## 📂 Repository Structure
 ```
 data-warehouse-project/
-  │
+│
 ├── datasets/                           # Raw datasets used for the project (ERP and CRM data)
-  │
+│
 ├── docs/                               # Project documentation and architecture details
-  │   ├── project_diagram.drawio          # Draw.io file shows the project's architecture
+│   ├── project_diagram.drawio          # Draw.io file shows the project's architecture
 │   ├── data_catalog.md                 # Catalog of datasets, including field descriptions and metadata
 │   ├── data_flow_diagram.drawio        # Draw.io file for the data flow diagram
 │   ├── sales_data_mart.drawio          # Draw.io file for data models (star schema)
 │   ├── naming-conventions.md           # Consistent naming guidelines for tables, columns, and files
 │
 ├── scripts/                            # SQL scripts for ETL and transformations
-  │   ├── bronze/                         # Scripts for extracting and loading raw data
-  │   ├── silver/                         # Scripts for cleaning and transforming data
-  │   ├── gold/                           # Scripts for creating analytical models
-  │
+│   ├── bronze/                         # Scripts for extracting and loading raw data
+│   ├── silver/                         # Scripts for cleaning and transforming data
+│   ├── gold/                           # Scripts for creating analytical models
+│
 ├── tests/                              # Test scripts and quality files
-  │
+│
 ├── README.md                           # Project overview and instructions
 ├── LICENSE                             # License information for the repository
 ├── .gitignore                          # Files and directories to be ignored by Git
