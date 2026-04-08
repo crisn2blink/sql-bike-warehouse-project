@@ -47,12 +47,13 @@ The Gold Layer is the business-level data representation, structured to support 
 
 | Column Name     | Data Type     | Description                                                                                   |
 |-----------------|---------------|-----------------------------------------------------------------------------------------------|
-| order_number    | NVARCHAR(50)  | A unique alphanumeric identifier for each sales order (e.g., 'SO54496').                      |
-| product_key     | INT           | Surrogate key linking the order to the product dimension table.                               |
-| customer_key    | INT           | Surrogate key linking the order to the customer dimension table.                              |
+| sale_id         | NVARCHAR(50)  | A unique alphanumeric identifier for each sales order (e.g. 'SALE10001').                     |
+| customer_key    | BIGINT        | Surrogate key linking the order to the customer dimension table.                              |
+| product_key     | BIGINT        | Surrogate key linking the order to the product dimension table.                               |
 | order_date      | DATE          | The date when the order was placed.                                                           |
-| shipping_date   | DATE          | The date when the order was shipped to the customer.                                          |
-| due_date        | DATE          | The date when the order payment was due.                                                      |
-| sales_amount    | INT           | The total monetary value of the sale for the line item, in whole currency units (e.g., 25).   |
-| quantity        | INT           | The number of units of the product ordered for the line item (e.g., 1).                       |
-| price           | INT           | The price per unit of the product for the line item, in whole currency units (e.g., 25).      |
+| quantity        | INT           | The number of units of the product ordered for the line item (e.g. 1).                        |
+| sale_price      | DECIMAL(10, 2)| The price that the item was sold at to the customer.                                          |
+| sales_revenue   | DECIMAL(10, 2)| The quantity * by the sale_price for the record.                                              |
+| sales_channel   | NVARCHAR(50)  | The medium by which the sale took place (e.g. Online).                                        |
+| store_name      | NVARCHAR(50)  | The name of the store that completed the sale (eg. Houston West)                              |
+| payment_method  | NVARCHAR(50)  | The payment option that the customer used to pay for the products. (e.g. Mastercard).         |
